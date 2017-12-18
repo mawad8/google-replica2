@@ -1,0 +1,197 @@
+/*sitewide style resets*/
+/* the (*) meen select all html elemants*/
+/*seriously be carful with this one thats meen
+this (*)tag it is gonna chang everything so we have to be carfull*/
+* {
+	color: #000;
+}
+/* thin we will start with the body*/
+/*we but margin:0; to center all the body tag*/
+body {
+	color: #222222;
+	margin:0;
+}
+/*then we will start with the <a>so here we wanna just chang the 
+color and make it look nice and do the hover for it*/
+a {
+	color: #222222;
+	text-decoration: none;
+}
+/*then we wanna make the hover for the <a> element*/
+a:hover {
+	color: #222222;
+	text-decoration: underline;
+
+}
+/*we wanna start to make it next to each other and make it look nice
+and replace it where we want*/
+/*we will start element by element step by step*/
+/*if we open the website we will see
+the first ul the nav bar its in the right side
+thats why we used flote to the right make it go to the right
+and margin-right :25px; so it has spaice 25px from the right*/
+ul.nav{
+float: right;
+margin-right: 25px
+}
+/*we will start with all the li inside the ul element*/
+ul.nav li{
+	list-style: none;
+	display: inline-block;
+	text-align: right;
+	padding: 5px 10px 0 0;
+	vertical-align: bottom;
+	margin: 5px 5px 0 0;
+	font-size: 13px;
+
+}
+/*select anay div element with the class fa*/
+div.fa{
+	font-size: 20px;
+	vertical-align: top;
+	opacity: 0.7;
+	cursor: default;
+}
+/*select any div element with a class of fa that are hovered
+over*/
+div.fa:hover{
+	opacity: 1.0;
+}
+/*select all the span element with the class of share*/
+/*cursor its the mouse when i but it on the thing i wannat
+it will change*/
+/*we use the position because we want
+the share word to be wher we want it to be 
+relative top-3 thats gonna shift the word 3px from the
+top to the bottom*/ 
+span.share{ 
+	background-color: #f2f2f2;
+	padding: 7px 15px;
+	cursor: default;
+	position: relative;
+	top: -3px;
+
+}
+
+/*we wanna hover all the span element*/
+span.share:hover {
+	background: #e1e1e1;
+}
+/* select all the img in the class profileimg*/
+img.profile_img {
+	border-radius: 25px;
+	height: 32px;
+	width: 32px;
+	position: relative;
+	top: 9px;
+    transition: all .2s linear;
+}
+/*middle section search bar*/
+/*select ant div element inside the search box class*/
+div.searchbox {
+	position: absolute;
+	margin-top:75px;
+	width: 100%;
+
+}
+/*select any img in the class 
+searchbox*/
+div.searchbox img{
+	padding: 142px 0 24px 0;
+	display: block;
+	margin: 0 auto;
+}
+/*select any input element,nested inside of any div element
+with a class of searchbox*/
+div.searchbox input{
+	width: 600px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #d9d9d9;
+	font-size: 16px;
+	border-radius: 5px;
+	display: block;
+}
+div.searchbox input:focus {
+	border-color: #f5f5f5;
+
+}
+/*starat with the buttons*/
+/* border-radius: make the border curvy 
+but i have to put ragular border first i can put tow
+value first value for left-up&right-down
+second value left-down&right-up look in w3school*/
+div.buttons {
+	text-align: center;
+	padding-left: 0;
+}
+
+div.buttons button{
+	background-color: #f5f5f5;
+	border: 1px solid;
+	border-radius: 15px 15px;
+	color: #666666;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 27px;
+	margin: 17px 6px;
+	padding: 0 12px;
+	display: inline-block;
+	cursor: pointer;
+
+
+}
+div.bottom {
+	bottom: 0 !important;
+	position: absolute;
+	width: 100%;
+	background-color: #f2f2f2;
+	border-top: 1px solid #e4e4e4;
+
+
+}
+div.bottom ul.left,
+div.bottom ul.right{
+	margin: 0;
+}
+div.bottom ul.left {
+	float: left;
+	padding-left: 20px;
+}
+div.bottom ul.right {
+	float: right;
+	padding-right: 10px;
+}
+div.bottom ul.left li,
+div.bottom ul.right li{
+	list-style: none;
+	display: inline;
+	line-height: 40px;
+}
+div.bottom ul.right li a:first-child {
+	padding-right: 8px;
+}
+div.bottom ul.left li a:nth-child(2);
+div.bottom ul.left li a:nth-child(3) {
+	margin-left: 7px;
+}
+div.bottom ul.left li a,
+div.bottom ul.right li a {
+	color: #666666;
+	margin: 2px 10px 0;
+	letter-spacing: 0.1px;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
